@@ -20,14 +20,14 @@ export const sortByDate=()=>({
 
 //SET START DATE ACTION
 
-export const setStartDate=(date)=>({
+export const setStartDate=(startDate)=>({
     type:'SET_START_DATE',
-    date
+    startDate
 });
 
 //SET END DATE ACTION
 
-export const setEndDate=(date)=>({
+export const setEndDate=(endDate)=>({
     type:'SET_END_DATE',
-    date
+    endDate
 });

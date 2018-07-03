@@ -8,7 +8,7 @@ import {NavLink} from 'react-router-dom';
         <NavLink to="/" activeClassName="is-active" exact={true}> Dashboard </NavLink>
         <NavLink to="/create" activeClassName="is-active">Create expense </NavLink>
        
-        <NavLink to="/help" activeClassName="is-active"> Help </NavLink>
+     
         </header>
           
         ); 
