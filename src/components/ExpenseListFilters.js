@@ -26,29 +26,52 @@ export class ExpenseListFilters extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="content-container">
+      <div className="input-group">
+      <h3 className="input-group__item"> Filter By:</h3>
+      <div className="input-group__item">
+     
         <input
-          type="text"
-          value={this.props.filters.text}
-          onChange={this.onTextChange}
-        />
-        <select
-          value={this.props.filters.sortBy}
-          onChange={this.onSortChange}
-        >
-          <option value="date">Date</option>
-          <option value="amount">Amount</option>
-        </select>
+        type="text"
+        className="text-input"
+        value={this.props.filters.text}
+        onChange={this.onTextChange}
+        placeholder="search expenses"
+         /> 
+      </div>
+      
+      <div className="input-group__item">
+      
+      
+            
         <DateRangePicker
-          startDate={this.props.filters.startDate}
-          endDate={this.props.filters.endDate}
-          onDatesChange={this.onDatesChange}
-          focusedInput={this.state.calendarFocused}
-          onFocusChange={this.onFocusChange}
-          showClearDates={true}
-          numberOfMonths={1}
-          isOutsideRange={() => false}
-        />
+        startDate={this.props.filters.startDate}
+        endDate={this.props.filters.endDate}
+        onDatesChange={this.onDatesChange}
+        focusedInput={this.state.calendarFocused}
+        onFocusChange={this.onFocusChange}
+        showClearDates={true}
+        numberOfMonths={1}
+        isOutsideRange={() => false}
+      />
+
+      </div>       
+      </div>
+      <div className="input-group">
+     
+      <h3 className="input-group__item"> Sort By:</h3>
+      <div className="input-group__item">
+        <select
+        className="select"
+        value={this.props.filters.sortBy}
+         onChange={this.onSortChange}
+        >
+        <option value="date">Date</option>
+         <option value="amount">Amount</option>
+         </select>
+      
+      </div>
+      </div>
       </div>
     );
   }

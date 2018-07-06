@@ -1,0 +1,30 @@
+.button{
+    background :fade-out($light-brown,.15);
+    border:none;
+    font-size:$font-size-large;
+    font-weight:300;
+    padding:$s-size;
+    display:inline-block;
+    color:$brown;
+    text-decoration:none;
+    line-height:1;
+}
+
+.button-logout{
+    background :none;
+    border:none;
+    font-size:$font-size-large;
+    font-weight:300;
+    padding:$s-size;
+    display:inline-block;
+    color:$light-brown;
+    text-decoration:none;
+    line-height:1;
+
+}
+
+.button--secondary{
+
+    background :rgb(122, 122, 122); 
+}
+
