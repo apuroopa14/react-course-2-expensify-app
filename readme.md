@@ -1,3 +1,8 @@
+#about project
+Developed an expense manager application using React.js
+Tested using jest framework.Used Redux Store for state management.
+Deployed the app on heroku.Firebase framework is used for data storage.
+
 #git commands
 
 git init -create a new git repo
